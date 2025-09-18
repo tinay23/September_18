@@ -1,0 +1,13 @@
+Q1: Why didn’t we use sudo before node lab.js in this case?
+ We used node because we are just running the file  while sudo is more 
+for installing something or either using specific ports or 
+just some other thing that requires more attention too.
+
+Q2: What does lab.js do?
+lab.js just shows async file reading in Node.js
+
+Q3: Why does *************after readFile*****************
+appear before the contents of plain.txt in the output while the call to readFile is before
+the console.log call that prints this line.
+Because the file is async. the node starts the file read 
+and then it immediately continues to the next line of code
